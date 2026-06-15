@@ -13,6 +13,9 @@ Describe a build, and the agent will:
 Everything in this repo — the example builds, their schemas, and their datapacks — was produced
 by this agent.
 
+<img width="1136" height="908" alt="image" src="https://github.com/user-attachments/assets/7b099096-04c0-4afc-b803-5c665440eae1" />
+
+
 ## How it works (the agent)
 
 This repo ships two Claude Code slash commands in [`.claude/commands/`](.claude/commands/):
