@@ -1,0 +1,1454 @@
+# ============================================================
+# EMPIRE STATE BUILDING v3 - realistic-scale recreation
+# ~0.5 scale (1 block ~= 2m). 9 setback tiers matching real
+# floors 5/21/25/30/72/81/85/86, plus tapering mast & antenna.
+# Footprint: 65x29 at base, ~225 blocks tall (Y64-Y288)
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. CLEAR BUILD AREA
+# ------------------------------------------------------------
+
+/pos1 -34,63,84
+/pos2 34,290,116
+//set air
+
+
+# ------------------------------------------------------------
+# 2. PLAZA
+# ------------------------------------------------------------
+
+/pos1 -34,63,84
+/pos2 34,63,116
+//set light_gray_concrete
+
+
+# ------------------------------------------------------------
+# T1 (65x29, Y64-78)
+# ------------------------------------------------------------
+
+/pos1 -32,64,86
+/pos2 32,78,114
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -31,65,87
+/pos2 31,77,113
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -32,64,86
+/pos2 32,64,114
+//replace smooth_quartz black_concrete
+//replace white_concrete black_concrete
+
+/pos1 -31,64,87
+/pos2 31,64,113
+//set smooth_quartz
+
+/pos1 -2,64,98
+/pos2 2,64,102
+//set glass
+
+/pos1 -32,64,86
+/pos2 -32,78,86
+//set light_gray_concrete
+
+/pos1 -32,64,114
+/pos2 -32,78,114
+//set light_gray_concrete
+
+/pos1 32,64,86
+/pos2 32,78,86
+//set light_gray_concrete
+
+/pos1 32,64,114
+/pos2 32,78,114
+//set light_gray_concrete
+
+/pos1 -31,66,86
+/pos2 31,77,86
+//set black_stained_glass
+
+/pos1 -31,66,114
+/pos2 31,77,114
+//set black_stained_glass
+
+/pos1 -32,66,87
+/pos2 -32,77,113
+//set black_stained_glass
+
+/pos1 32,66,87
+/pos2 32,77,113
+//set black_stained_glass
+
+/pos1 -31,66,86
+/pos2 -31,77,86
+//set light_gray_concrete
+
+/pos1 -31,66,114
+/pos2 -31,77,114
+//set light_gray_concrete
+
+/pos1 -27,66,86
+/pos2 -27,77,86
+//set light_gray_concrete
+
+/pos1 -27,66,114
+/pos2 -27,77,114
+//set light_gray_concrete
+
+/pos1 -23,66,86
+/pos2 -23,77,86
+//set light_gray_concrete
+
+/pos1 -23,66,114
+/pos2 -23,77,114
+//set light_gray_concrete
+
+/pos1 -19,66,86
+/pos2 -19,77,86
+//set light_gray_concrete
+
+/pos1 -19,66,114
+/pos2 -19,77,114
+//set light_gray_concrete
+
+/pos1 -15,66,86
+/pos2 -15,77,86
+//set light_gray_concrete
+
+/pos1 -15,66,114
+/pos2 -15,77,114
+//set light_gray_concrete
+
+/pos1 -11,66,86
+/pos2 -11,77,86
+//set light_gray_concrete
+
+/pos1 -11,66,114
+/pos2 -11,77,114
+//set light_gray_concrete
+
+/pos1 -7,66,86
+/pos2 -7,77,86
+//set light_gray_concrete
+
+/pos1 -7,66,114
+/pos2 -7,77,114
+//set light_gray_concrete
+
+/pos1 -3,66,86
+/pos2 -3,77,86
+//set light_gray_concrete
+
+/pos1 -3,66,114
+/pos2 -3,77,114
+//set light_gray_concrete
+
+/pos1 1,66,86
+/pos2 1,77,86
+//set light_gray_concrete
+
+/pos1 1,66,114
+/pos2 1,77,114
+//set light_gray_concrete
+
+/pos1 5,66,86
+/pos2 5,77,86
+//set light_gray_concrete
+
+/pos1 5,66,114
+/pos2 5,77,114
+//set light_gray_concrete
+
+/pos1 9,66,86
+/pos2 9,77,86
+//set light_gray_concrete
+
+/pos1 9,66,114
+/pos2 9,77,114
+//set light_gray_concrete
+
+/pos1 13,66,86
+/pos2 13,77,86
+//set light_gray_concrete
+
+/pos1 13,66,114
+/pos2 13,77,114
+//set light_gray_concrete
+
+/pos1 17,66,86
+/pos2 17,77,86
+//set light_gray_concrete
+
+/pos1 17,66,114
+/pos2 17,77,114
+//set light_gray_concrete
+
+/pos1 21,66,86
+/pos2 21,77,86
+//set light_gray_concrete
+
+/pos1 21,66,114
+/pos2 21,77,114
+//set light_gray_concrete
+
+/pos1 25,66,86
+/pos2 25,77,86
+//set light_gray_concrete
+
+/pos1 25,66,114
+/pos2 25,77,114
+//set light_gray_concrete
+
+/pos1 29,66,86
+/pos2 29,77,86
+//set light_gray_concrete
+
+/pos1 29,66,114
+/pos2 29,77,114
+//set light_gray_concrete
+
+/pos1 -32,66,87
+/pos2 -32,77,87
+//set light_gray_concrete
+
+/pos1 32,66,87
+/pos2 32,77,87
+//set light_gray_concrete
+
+/pos1 -32,66,91
+/pos2 -32,77,91
+//set light_gray_concrete
+
+/pos1 32,66,91
+/pos2 32,77,91
+//set light_gray_concrete
+
+/pos1 -32,66,95
+/pos2 -32,77,95
+//set light_gray_concrete
+
+/pos1 32,66,95
+/pos2 32,77,95
+//set light_gray_concrete
+
+/pos1 -32,66,99
+/pos2 -32,77,99
+//set light_gray_concrete
+
+/pos1 32,66,99
+/pos2 32,77,99
+//set light_gray_concrete
+
+/pos1 -32,66,103
+/pos2 -32,77,103
+//set light_gray_concrete
+
+/pos1 32,66,103
+/pos2 32,77,103
+//set light_gray_concrete
+
+/pos1 -32,66,107
+/pos2 -32,77,107
+//set light_gray_concrete
+
+/pos1 32,66,107
+/pos2 32,77,107
+//set light_gray_concrete
+
+/pos1 -32,66,111
+/pos2 -32,77,111
+//set light_gray_concrete
+
+/pos1 32,66,111
+/pos2 32,77,111
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T2 (55x25, Y78-106)
+# ------------------------------------------------------------
+
+/pos1 -27,78,88
+/pos2 27,106,112
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -26,79,89
+/pos2 26,105,111
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -26,78,89
+/pos2 26,78,111
+//set light_gray_concrete
+
+/pos1 -2,78,98
+/pos2 2,78,102
+//set glass
+
+/pos1 -27,78,88
+/pos2 -27,106,88
+//set light_gray_concrete
+
+/pos1 -27,78,112
+/pos2 -27,106,112
+//set light_gray_concrete
+
+/pos1 27,78,88
+/pos2 27,106,88
+//set light_gray_concrete
+
+/pos1 27,78,112
+/pos2 27,106,112
+//set light_gray_concrete
+
+/pos1 -26,80,88
+/pos2 26,105,88
+//set black_stained_glass
+
+/pos1 -26,80,112
+/pos2 26,105,112
+//set black_stained_glass
+
+/pos1 -27,80,89
+/pos2 -27,105,111
+//set black_stained_glass
+
+/pos1 27,80,89
+/pos2 27,105,111
+//set black_stained_glass
+
+/pos1 -26,80,88
+/pos2 -26,105,88
+//set light_gray_concrete
+
+/pos1 -26,80,112
+/pos2 -26,105,112
+//set light_gray_concrete
+
+/pos1 -22,80,88
+/pos2 -22,105,88
+//set light_gray_concrete
+
+/pos1 -22,80,112
+/pos2 -22,105,112
+//set light_gray_concrete
+
+/pos1 -18,80,88
+/pos2 -18,105,88
+//set light_gray_concrete
+
+/pos1 -18,80,112
+/pos2 -18,105,112
+//set light_gray_concrete
+
+/pos1 -14,80,88
+/pos2 -14,105,88
+//set light_gray_concrete
+
+/pos1 -14,80,112
+/pos2 -14,105,112
+//set light_gray_concrete
+
+/pos1 -10,80,88
+/pos2 -10,105,88
+//set light_gray_concrete
+
+/pos1 -10,80,112
+/pos2 -10,105,112
+//set light_gray_concrete
+
+/pos1 -6,80,88
+/pos2 -6,105,88
+//set light_gray_concrete
+
+/pos1 -6,80,112
+/pos2 -6,105,112
+//set light_gray_concrete
+
+/pos1 -2,80,88
+/pos2 -2,105,88
+//set light_gray_concrete
+
+/pos1 -2,80,112
+/pos2 -2,105,112
+//set light_gray_concrete
+
+/pos1 2,80,88
+/pos2 2,105,88
+//set light_gray_concrete
+
+/pos1 2,80,112
+/pos2 2,105,112
+//set light_gray_concrete
+
+/pos1 6,80,88
+/pos2 6,105,88
+//set light_gray_concrete
+
+/pos1 6,80,112
+/pos2 6,105,112
+//set light_gray_concrete
+
+/pos1 10,80,88
+/pos2 10,105,88
+//set light_gray_concrete
+
+/pos1 10,80,112
+/pos2 10,105,112
+//set light_gray_concrete
+
+/pos1 14,80,88
+/pos2 14,105,88
+//set light_gray_concrete
+
+/pos1 14,80,112
+/pos2 14,105,112
+//set light_gray_concrete
+
+/pos1 18,80,88
+/pos2 18,105,88
+//set light_gray_concrete
+
+/pos1 18,80,112
+/pos2 18,105,112
+//set light_gray_concrete
+
+/pos1 22,80,88
+/pos2 22,105,88
+//set light_gray_concrete
+
+/pos1 22,80,112
+/pos2 22,105,112
+//set light_gray_concrete
+
+/pos1 26,80,88
+/pos2 26,105,88
+//set light_gray_concrete
+
+/pos1 26,80,112
+/pos2 26,105,112
+//set light_gray_concrete
+
+/pos1 -27,80,89
+/pos2 -27,105,89
+//set light_gray_concrete
+
+/pos1 27,80,89
+/pos2 27,105,89
+//set light_gray_concrete
+
+/pos1 -27,80,93
+/pos2 -27,105,93
+//set light_gray_concrete
+
+/pos1 27,80,93
+/pos2 27,105,93
+//set light_gray_concrete
+
+/pos1 -27,80,97
+/pos2 -27,105,97
+//set light_gray_concrete
+
+/pos1 27,80,97
+/pos2 27,105,97
+//set light_gray_concrete
+
+/pos1 -27,80,101
+/pos2 -27,105,101
+//set light_gray_concrete
+
+/pos1 27,80,101
+/pos2 27,105,101
+//set light_gray_concrete
+
+/pos1 -27,80,105
+/pos2 -27,105,105
+//set light_gray_concrete
+
+/pos1 27,80,105
+/pos2 27,105,105
+//set light_gray_concrete
+
+/pos1 -27,80,109
+/pos2 -27,105,109
+//set light_gray_concrete
+
+/pos1 27,80,109
+/pos2 27,105,109
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T3 (49x21, Y106-113)
+# ------------------------------------------------------------
+
+/pos1 -24,106,90
+/pos2 24,113,110
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -23,107,91
+/pos2 23,112,109
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -23,106,91
+/pos2 23,106,109
+//set light_gray_concrete
+
+/pos1 -2,106,98
+/pos2 2,106,102
+//set glass
+
+/pos1 -24,106,90
+/pos2 -24,113,90
+//set light_gray_concrete
+
+/pos1 -24,106,110
+/pos2 -24,113,110
+//set light_gray_concrete
+
+/pos1 24,106,90
+/pos2 24,113,90
+//set light_gray_concrete
+
+/pos1 24,106,110
+/pos2 24,113,110
+//set light_gray_concrete
+
+/pos1 -23,108,90
+/pos2 23,112,90
+//set black_stained_glass
+
+/pos1 -23,108,110
+/pos2 23,112,110
+//set black_stained_glass
+
+/pos1 -24,108,91
+/pos2 -24,112,109
+//set black_stained_glass
+
+/pos1 24,108,91
+/pos2 24,112,109
+//set black_stained_glass
+
+/pos1 -23,108,90
+/pos2 -23,112,90
+//set light_gray_concrete
+
+/pos1 -23,108,110
+/pos2 -23,112,110
+//set light_gray_concrete
+
+/pos1 -19,108,90
+/pos2 -19,112,90
+//set light_gray_concrete
+
+/pos1 -19,108,110
+/pos2 -19,112,110
+//set light_gray_concrete
+
+/pos1 -15,108,90
+/pos2 -15,112,90
+//set light_gray_concrete
+
+/pos1 -15,108,110
+/pos2 -15,112,110
+//set light_gray_concrete
+
+/pos1 -11,108,90
+/pos2 -11,112,90
+//set light_gray_concrete
+
+/pos1 -11,108,110
+/pos2 -11,112,110
+//set light_gray_concrete
+
+/pos1 -7,108,90
+/pos2 -7,112,90
+//set light_gray_concrete
+
+/pos1 -7,108,110
+/pos2 -7,112,110
+//set light_gray_concrete
+
+/pos1 -3,108,90
+/pos2 -3,112,90
+//set light_gray_concrete
+
+/pos1 -3,108,110
+/pos2 -3,112,110
+//set light_gray_concrete
+
+/pos1 1,108,90
+/pos2 1,112,90
+//set light_gray_concrete
+
+/pos1 1,108,110
+/pos2 1,112,110
+//set light_gray_concrete
+
+/pos1 5,108,90
+/pos2 5,112,90
+//set light_gray_concrete
+
+/pos1 5,108,110
+/pos2 5,112,110
+//set light_gray_concrete
+
+/pos1 9,108,90
+/pos2 9,112,90
+//set light_gray_concrete
+
+/pos1 9,108,110
+/pos2 9,112,110
+//set light_gray_concrete
+
+/pos1 13,108,90
+/pos2 13,112,90
+//set light_gray_concrete
+
+/pos1 13,108,110
+/pos2 13,112,110
+//set light_gray_concrete
+
+/pos1 17,108,90
+/pos2 17,112,90
+//set light_gray_concrete
+
+/pos1 17,108,110
+/pos2 17,112,110
+//set light_gray_concrete
+
+/pos1 21,108,90
+/pos2 21,112,90
+//set light_gray_concrete
+
+/pos1 21,108,110
+/pos2 21,112,110
+//set light_gray_concrete
+
+/pos1 -24,108,91
+/pos2 -24,112,91
+//set light_gray_concrete
+
+/pos1 24,108,91
+/pos2 24,112,91
+//set light_gray_concrete
+
+/pos1 -24,108,95
+/pos2 -24,112,95
+//set light_gray_concrete
+
+/pos1 24,108,95
+/pos2 24,112,95
+//set light_gray_concrete
+
+/pos1 -24,108,99
+/pos2 -24,112,99
+//set light_gray_concrete
+
+/pos1 24,108,99
+/pos2 24,112,99
+//set light_gray_concrete
+
+/pos1 -24,108,103
+/pos2 -24,112,103
+//set light_gray_concrete
+
+/pos1 24,108,103
+/pos2 24,112,103
+//set light_gray_concrete
+
+/pos1 -24,108,107
+/pos2 -24,112,107
+//set light_gray_concrete
+
+/pos1 24,108,107
+/pos2 24,112,107
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T4 (41x19, Y113-122)
+# ------------------------------------------------------------
+
+/pos1 -20,113,91
+/pos2 20,122,109
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -19,114,92
+/pos2 19,121,108
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -19,113,92
+/pos2 19,113,108
+//set light_gray_concrete
+
+/pos1 -2,113,98
+/pos2 2,113,102
+//set glass
+
+/pos1 -20,113,91
+/pos2 -20,122,91
+//set light_gray_concrete
+
+/pos1 -20,113,109
+/pos2 -20,122,109
+//set light_gray_concrete
+
+/pos1 20,113,91
+/pos2 20,122,91
+//set light_gray_concrete
+
+/pos1 20,113,109
+/pos2 20,122,109
+//set light_gray_concrete
+
+/pos1 -19,115,91
+/pos2 19,121,91
+//set black_stained_glass
+
+/pos1 -19,115,109
+/pos2 19,121,109
+//set black_stained_glass
+
+/pos1 -20,115,92
+/pos2 -20,121,108
+//set black_stained_glass
+
+/pos1 20,115,92
+/pos2 20,121,108
+//set black_stained_glass
+
+/pos1 -19,115,91
+/pos2 -19,121,91
+//set light_gray_concrete
+
+/pos1 -19,115,109
+/pos2 -19,121,109
+//set light_gray_concrete
+
+/pos1 -15,115,91
+/pos2 -15,121,91
+//set light_gray_concrete
+
+/pos1 -15,115,109
+/pos2 -15,121,109
+//set light_gray_concrete
+
+/pos1 -11,115,91
+/pos2 -11,121,91
+//set light_gray_concrete
+
+/pos1 -11,115,109
+/pos2 -11,121,109
+//set light_gray_concrete
+
+/pos1 -7,115,91
+/pos2 -7,121,91
+//set light_gray_concrete
+
+/pos1 -7,115,109
+/pos2 -7,121,109
+//set light_gray_concrete
+
+/pos1 -3,115,91
+/pos2 -3,121,91
+//set light_gray_concrete
+
+/pos1 -3,115,109
+/pos2 -3,121,109
+//set light_gray_concrete
+
+/pos1 1,115,91
+/pos2 1,121,91
+//set light_gray_concrete
+
+/pos1 1,115,109
+/pos2 1,121,109
+//set light_gray_concrete
+
+/pos1 5,115,91
+/pos2 5,121,91
+//set light_gray_concrete
+
+/pos1 5,115,109
+/pos2 5,121,109
+//set light_gray_concrete
+
+/pos1 9,115,91
+/pos2 9,121,91
+//set light_gray_concrete
+
+/pos1 9,115,109
+/pos2 9,121,109
+//set light_gray_concrete
+
+/pos1 13,115,91
+/pos2 13,121,91
+//set light_gray_concrete
+
+/pos1 13,115,109
+/pos2 13,121,109
+//set light_gray_concrete
+
+/pos1 17,115,91
+/pos2 17,121,91
+//set light_gray_concrete
+
+/pos1 17,115,109
+/pos2 17,121,109
+//set light_gray_concrete
+
+/pos1 -20,115,92
+/pos2 -20,121,92
+//set light_gray_concrete
+
+/pos1 20,115,92
+/pos2 20,121,92
+//set light_gray_concrete
+
+/pos1 -20,115,96
+/pos2 -20,121,96
+//set light_gray_concrete
+
+/pos1 20,115,96
+/pos2 20,121,96
+//set light_gray_concrete
+
+/pos1 -20,115,100
+/pos2 -20,121,100
+//set light_gray_concrete
+
+/pos1 20,115,100
+/pos2 20,121,100
+//set light_gray_concrete
+
+/pos1 -20,115,104
+/pos2 -20,121,104
+//set light_gray_concrete
+
+/pos1 20,115,104
+/pos2 20,121,104
+//set light_gray_concrete
+
+/pos1 -20,115,108
+/pos2 -20,121,108
+//set light_gray_concrete
+
+/pos1 20,115,108
+/pos2 20,121,108
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T5 (33x15, Y122-199)
+# ------------------------------------------------------------
+
+/pos1 -16,122,93
+/pos2 16,199,107
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -15,123,94
+/pos2 15,198,106
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -15,122,94
+/pos2 15,122,106
+//set light_gray_concrete
+
+/pos1 -2,122,98
+/pos2 2,122,102
+//set glass
+
+/pos1 -16,122,93
+/pos2 -16,199,93
+//set light_gray_concrete
+
+/pos1 -16,122,107
+/pos2 -16,199,107
+//set light_gray_concrete
+
+/pos1 16,122,93
+/pos2 16,199,93
+//set light_gray_concrete
+
+/pos1 16,122,107
+/pos2 16,199,107
+//set light_gray_concrete
+
+/pos1 -15,124,93
+/pos2 15,198,93
+//set black_stained_glass
+
+/pos1 -15,124,107
+/pos2 15,198,107
+//set black_stained_glass
+
+/pos1 -16,124,94
+/pos2 -16,198,106
+//set black_stained_glass
+
+/pos1 16,124,94
+/pos2 16,198,106
+//set black_stained_glass
+
+/pos1 -15,124,93
+/pos2 -15,198,93
+//set light_gray_concrete
+
+/pos1 -15,124,107
+/pos2 -15,198,107
+//set light_gray_concrete
+
+/pos1 -11,124,93
+/pos2 -11,198,93
+//set light_gray_concrete
+
+/pos1 -11,124,107
+/pos2 -11,198,107
+//set light_gray_concrete
+
+/pos1 -7,124,93
+/pos2 -7,198,93
+//set light_gray_concrete
+
+/pos1 -7,124,107
+/pos2 -7,198,107
+//set light_gray_concrete
+
+/pos1 -3,124,93
+/pos2 -3,198,93
+//set light_gray_concrete
+
+/pos1 -3,124,107
+/pos2 -3,198,107
+//set light_gray_concrete
+
+/pos1 1,124,93
+/pos2 1,198,93
+//set light_gray_concrete
+
+/pos1 1,124,107
+/pos2 1,198,107
+//set light_gray_concrete
+
+/pos1 5,124,93
+/pos2 5,198,93
+//set light_gray_concrete
+
+/pos1 5,124,107
+/pos2 5,198,107
+//set light_gray_concrete
+
+/pos1 9,124,93
+/pos2 9,198,93
+//set light_gray_concrete
+
+/pos1 9,124,107
+/pos2 9,198,107
+//set light_gray_concrete
+
+/pos1 13,124,93
+/pos2 13,198,93
+//set light_gray_concrete
+
+/pos1 13,124,107
+/pos2 13,198,107
+//set light_gray_concrete
+
+/pos1 -16,124,94
+/pos2 -16,198,94
+//set light_gray_concrete
+
+/pos1 16,124,94
+/pos2 16,198,94
+//set light_gray_concrete
+
+/pos1 -16,124,98
+/pos2 -16,198,98
+//set light_gray_concrete
+
+/pos1 16,124,98
+/pos2 16,198,98
+//set light_gray_concrete
+
+/pos1 -16,124,102
+/pos2 -16,198,102
+//set light_gray_concrete
+
+/pos1 16,124,102
+/pos2 16,198,102
+//set light_gray_concrete
+
+/pos1 -16,124,106
+/pos2 -16,198,106
+//set light_gray_concrete
+
+/pos1 16,124,106
+/pos2 16,198,106
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T6 (29x13, Y199-215)
+# ------------------------------------------------------------
+
+/pos1 -14,199,94
+/pos2 14,215,106
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -13,200,95
+/pos2 13,214,105
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -13,199,95
+/pos2 13,199,105
+//set light_gray_concrete
+
+/pos1 -2,199,98
+/pos2 2,199,102
+//set glass
+
+/pos1 -14,199,94
+/pos2 -14,215,94
+//set light_gray_concrete
+
+/pos1 -14,199,106
+/pos2 -14,215,106
+//set light_gray_concrete
+
+/pos1 14,199,94
+/pos2 14,215,94
+//set light_gray_concrete
+
+/pos1 14,199,106
+/pos2 14,215,106
+//set light_gray_concrete
+
+/pos1 -13,201,94
+/pos2 13,214,94
+//set black_stained_glass
+
+/pos1 -13,201,106
+/pos2 13,214,106
+//set black_stained_glass
+
+/pos1 -14,201,95
+/pos2 -14,214,105
+//set black_stained_glass
+
+/pos1 14,201,95
+/pos2 14,214,105
+//set black_stained_glass
+
+/pos1 -13,201,94
+/pos2 -13,214,94
+//set light_gray_concrete
+
+/pos1 -13,201,106
+/pos2 -13,214,106
+//set light_gray_concrete
+
+/pos1 -9,201,94
+/pos2 -9,214,94
+//set light_gray_concrete
+
+/pos1 -9,201,106
+/pos2 -9,214,106
+//set light_gray_concrete
+
+/pos1 -5,201,94
+/pos2 -5,214,94
+//set light_gray_concrete
+
+/pos1 -5,201,106
+/pos2 -5,214,106
+//set light_gray_concrete
+
+/pos1 -1,201,94
+/pos2 -1,214,94
+//set light_gray_concrete
+
+/pos1 -1,201,106
+/pos2 -1,214,106
+//set light_gray_concrete
+
+/pos1 3,201,94
+/pos2 3,214,94
+//set light_gray_concrete
+
+/pos1 3,201,106
+/pos2 3,214,106
+//set light_gray_concrete
+
+/pos1 7,201,94
+/pos2 7,214,94
+//set light_gray_concrete
+
+/pos1 7,201,106
+/pos2 7,214,106
+//set light_gray_concrete
+
+/pos1 11,201,94
+/pos2 11,214,94
+//set light_gray_concrete
+
+/pos1 11,201,106
+/pos2 11,214,106
+//set light_gray_concrete
+
+/pos1 -14,201,95
+/pos2 -14,214,95
+//set light_gray_concrete
+
+/pos1 14,201,95
+/pos2 14,214,95
+//set light_gray_concrete
+
+/pos1 -14,201,99
+/pos2 -14,214,99
+//set light_gray_concrete
+
+/pos1 14,201,99
+/pos2 14,214,99
+//set light_gray_concrete
+
+/pos1 -14,201,103
+/pos2 -14,214,103
+//set light_gray_concrete
+
+/pos1 14,201,103
+/pos2 14,214,103
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T7 (23x11, Y215-222)
+# ------------------------------------------------------------
+
+/pos1 -11,215,95
+/pos2 11,222,105
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -10,216,96
+/pos2 10,221,104
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -10,215,96
+/pos2 10,215,104
+//set light_gray_concrete
+
+/pos1 -2,215,98
+/pos2 2,215,102
+//set glass
+
+/pos1 -11,215,95
+/pos2 -11,222,95
+//set light_gray_concrete
+
+/pos1 -11,215,105
+/pos2 -11,222,105
+//set light_gray_concrete
+
+/pos1 11,215,95
+/pos2 11,222,95
+//set light_gray_concrete
+
+/pos1 11,215,105
+/pos2 11,222,105
+//set light_gray_concrete
+
+/pos1 -10,217,95
+/pos2 10,221,95
+//set black_stained_glass
+
+/pos1 -10,217,105
+/pos2 10,221,105
+//set black_stained_glass
+
+/pos1 -11,217,96
+/pos2 -11,221,104
+//set black_stained_glass
+
+/pos1 11,217,96
+/pos2 11,221,104
+//set black_stained_glass
+
+/pos1 -10,217,95
+/pos2 -10,221,95
+//set light_gray_concrete
+
+/pos1 -10,217,105
+/pos2 -10,221,105
+//set light_gray_concrete
+
+/pos1 -6,217,95
+/pos2 -6,221,95
+//set light_gray_concrete
+
+/pos1 -6,217,105
+/pos2 -6,221,105
+//set light_gray_concrete
+
+/pos1 -2,217,95
+/pos2 -2,221,95
+//set light_gray_concrete
+
+/pos1 -2,217,105
+/pos2 -2,221,105
+//set light_gray_concrete
+
+/pos1 2,217,95
+/pos2 2,221,95
+//set light_gray_concrete
+
+/pos1 2,217,105
+/pos2 2,221,105
+//set light_gray_concrete
+
+/pos1 6,217,95
+/pos2 6,221,95
+//set light_gray_concrete
+
+/pos1 6,217,105
+/pos2 6,221,105
+//set light_gray_concrete
+
+/pos1 10,217,95
+/pos2 10,221,95
+//set light_gray_concrete
+
+/pos1 10,217,105
+/pos2 10,221,105
+//set light_gray_concrete
+
+/pos1 -11,217,96
+/pos2 -11,221,96
+//set light_gray_concrete
+
+/pos1 11,217,96
+/pos2 11,221,96
+//set light_gray_concrete
+
+/pos1 -11,217,100
+/pos2 -11,221,100
+//set light_gray_concrete
+
+/pos1 11,217,100
+/pos2 11,221,100
+//set light_gray_concrete
+
+/pos1 -11,217,104
+/pos2 -11,221,104
+//set light_gray_concrete
+
+/pos1 11,217,104
+/pos2 11,221,104
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# T8 (19x9, Y222-224)
+# ------------------------------------------------------------
+
+/pos1 -9,222,96
+/pos2 9,224,104
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -8,223,97
+/pos2 8,223,103
+//replace smooth_quartz air
+//replace white_concrete air
+
+/pos1 -8,222,97
+/pos2 8,222,103
+//set light_gray_concrete
+
+/pos1 -2,222,98
+/pos2 2,222,102
+//set glass
+
+/pos1 -9,222,96
+/pos2 -9,224,96
+//set light_gray_concrete
+
+/pos1 -9,222,104
+/pos2 -9,224,104
+//set light_gray_concrete
+
+/pos1 9,222,96
+/pos2 9,224,96
+//set light_gray_concrete
+
+/pos1 9,222,104
+/pos2 9,224,104
+//set light_gray_concrete
+
+/pos1 -8,223,96
+/pos2 8,223,96
+//set black_stained_glass
+
+/pos1 -8,223,104
+/pos2 8,223,104
+//set black_stained_glass
+
+/pos1 -9,223,97
+/pos2 -9,223,103
+//set black_stained_glass
+
+/pos1 9,223,97
+/pos2 9,223,103
+//set black_stained_glass
+
+
+
+# ------------------------------------------------------------
+# T9 - OBSERVATION DECK (17x7, Y224-227)
+# ------------------------------------------------------------
+
+/pos1 -8,224,97
+/pos2 8,224,103
+//set smooth_quartz
+
+/pos1 -2,224,98
+/pos2 2,224,102
+//set glass
+
+/pos1 -8,227,97
+/pos2 8,227,103
+//set 70%smooth_quartz,30%white_concrete
+
+/pos1 -8,224,97
+/pos2 -8,227,97
+//set light_gray_concrete
+
+/pos1 -8,224,103
+/pos2 -8,227,103
+//set light_gray_concrete
+
+/pos1 8,224,97
+/pos2 8,227,97
+//set light_gray_concrete
+
+/pos1 8,224,103
+/pos2 8,227,103
+//set light_gray_concrete
+
+/pos1 -8,225,97
+/pos2 8,225,97
+//set iron_bars
+
+/pos1 -8,225,103
+/pos2 8,225,103
+//set iron_bars
+
+/pos1 -8,225,98
+/pos2 -8,225,102
+//set iron_bars
+
+/pos1 8,225,98
+/pos2 8,225,102
+//set iron_bars
+
+
+# ------------------------------------------------------------
+# MAST & ANTENNA
+# ------------------------------------------------------------
+
+/pos1 -5,227,98
+/pos2 5,242,102
+//set 70%light_gray_concrete,30%iron_block
+
+/pos1 -2,242,99
+/pos2 2,256,101
+//set 70%light_gray_concrete,30%iron_block
+
+/pos1 0,256,100
+/pos2 0,287,100
+//set lightning_rod[facing=up]
+
+/setblock 0 288 100 sea_lantern
+
+
+# ------------------------------------------------------------
+# GRAND ENTRANCE (south face, T1)
+# ------------------------------------------------------------
+
+/pos1 -1,64,114
+/pos2 1,67,114
+//set air
+
+/pos1 -1,64,114
+/pos2 -1,67,114
+//set black_stained_glass_pane
+
+/pos1 1,64,114
+/pos2 1,67,114
+//set black_stained_glass_pane
+
+/pos1 0,66,114
+/pos2 0,67,114
+//set black_stained_glass_pane
+
+/setblock 0 64 114 dark_oak_door[facing=south,half=lower]
+/setblock 0 65 114 dark_oak_door[facing=south,half=upper]
+
+/pos1 -2,63,115
+/pos2 2,63,115
+//set smooth_quartz_stairs[facing=north]
+
+
+# ------------------------------------------------------------
+# LOBBY INTERIOR
+# ------------------------------------------------------------
+
+/pos1 -20,65,90
+/pos2 -20,76,90
+//set polished_andesite
+
+/pos1 20,65,90
+/pos2 20,76,90
+//set polished_andesite
+
+/pos1 -20,65,110
+/pos2 -20,76,110
+//set polished_andesite
+
+/pos1 20,65,110
+/pos2 20,76,110
+//set polished_andesite
+
+/setblock -28 65 88 lantern
+/setblock 28 65 88 lantern
+/setblock -28 65 112 lantern
+/setblock 28 65 112 lantern
+
+
+# ------------------------------------------------------------
+# SETBACK TERRACE LIGHTING
+# ------------------------------------------------------------
+
+/setblock -31 78 87 sea_lantern
+/setblock 31 78 87 sea_lantern
+/setblock -31 78 113 sea_lantern
+/setblock 31 78 113 sea_lantern
+
+/setblock -15 122 94 sea_lantern
+/setblock 15 122 94 sea_lantern
+/setblock -15 122 106 sea_lantern
+/setblock 15 122 106 sea_lantern

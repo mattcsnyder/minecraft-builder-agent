@@ -1,0 +1,364 @@
+# ============================================================
+# WIZARD'S TOWER - WORLDEDIT COMMAND SCRIPT
+# Footprint: 13 x 13 (X: -6 to 6, Z: -6 to 6)
+# Height: Y=63 (foundation) to Y=96 (spire)
+# Ground level: Y=64
+#
+# 5 Floors:
+#   1. Entry Hall      (Y=64) - bookshelves, rune rug, storage
+#   2. Alchemy Lab     (Y=69) - brewing stands, cauldrons, barrels
+#   3. Library         (Y=74) - bookshelf ring, lectern, reading nook
+#   4. Enchanting Room (Y=79) - enchanting table + bookshelf array
+#   5. Study/Bedroom   (Y=84) - bed, desk, ender chest
+#   Roof               (Y=89+) - stepped spire with amethyst cluster
+#
+# Materials:
+#   - deepslate_bricks / cracked_deepslate_bricks / amethyst_block (walls)
+#   - dark_oak_planks (floors)
+#   - purple_stained_glass (windows)
+#   - bookshelf, lectern, enchanting_table, brewing_stand, cauldron,
+#     crafting_table, chest, ender_chest, purple_bed, candle, lantern
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. CLEAR BUILD AREA
+# ------------------------------------------------------------
+
+/pos1 62,63,-8
+/pos2 78,97,8
+//set air
+
+
+# ------------------------------------------------------------
+# 2. FOUNDATION & GROUNDS
+# ------------------------------------------------------------
+
+/pos1 63,63,-7
+/pos2 77,63,7
+//set 60%deepslate_bricks,30%cracked_deepslate_bricks,10%amethyst_block
+
+/pos1 62,63,-8
+/pos2 78,63,8
+//replace air grass_block
+
+
+# ------------------------------------------------------------
+# 3. TOWER SHELL
+# ------------------------------------------------------------
+
+/pos1 64,64,-6
+/pos2 76,88,6
+//set 65%deepslate_bricks,25%cracked_deepslate_bricks,10%amethyst_block
+
+# Hollow interior
+/pos1 65,64,-5
+/pos2 75,88,5
+//replace deepslate_bricks air
+//replace cracked_deepslate_bricks air
+//replace amethyst_block air
+
+
+# ------------------------------------------------------------
+# 4. FLOORS
+# ------------------------------------------------------------
+
+# Floor 1 - Entry Hall (Y=64)
+/pos1 65,64,-5
+/pos2 75,64,5
+//set dark_oak_planks
+
+# Floor 2 - Alchemy Lab (Y=69)
+/pos1 65,69,-5
+/pos2 75,69,5
+//set dark_oak_planks
+
+# Floor 3 - Library (Y=74)
+/pos1 65,74,-5
+/pos2 75,74,5
+//set dark_oak_planks
+
+# Floor 4 - Enchanting Chamber (Y=79)
+/pos1 65,79,-5
+/pos2 75,79,5
+//set dark_oak_planks
+
+# Floor 5 - Study & Bedroom (Y=84)
+/pos1 65,84,-5
+/pos2 75,84,5
+//set dark_oak_planks
+
+# Roof base (Y=89)
+/pos1 65,89,-5
+/pos2 75,89,5
+//set dark_oak_planks
+
+
+# ------------------------------------------------------------
+# 5. LADDER SHAFT (against east wall, z=0)
+# ------------------------------------------------------------
+
+/pos1 75,65,0
+/pos2 75,88,0
+//set ladder[facing=west]
+
+
+# ------------------------------------------------------------
+# 6. ENTRANCE
+# ------------------------------------------------------------
+
+# Door opening on south wall
+/pos1 70,64,6
+/pos2 70,65,6
+//set air
+
+/setblock 70 64 6 dark_oak_door[facing=north,half=lower]
+/setblock 70 65 6 dark_oak_door[facing=north,half=upper]
+
+# Entrance canopy
+/pos1 69,66,7
+/pos2 71,66,7
+//set deepslate_brick_stairs[facing=north]
+
+# Entrance lanterns
+/setblock 68 65 7 lantern
+/setblock 72 65 7 lantern
+
+
+# ------------------------------------------------------------
+# 7. WINDOWS
+# ------------------------------------------------------------
+
+# Floor 1 windows (north & south)
+/pos1 69,66,-6
+/pos2 71,67,-6
+//set purple_stained_glass
+
+/pos1 69,66,6
+/pos2 71,67,6
+//set purple_stained_glass
+
+# Floor 2 windows (east & west)
+/pos1 76,71,-1
+/pos2 76,72,1
+//set purple_stained_glass
+
+/pos1 64,71,-1
+/pos2 64,72,1
+//set purple_stained_glass
+
+# Floor 3 windows (north & south)
+/pos1 69,76,-6
+/pos2 71,77,-6
+//set purple_stained_glass
+
+/pos1 69,76,6
+/pos2 71,77,6
+//set purple_stained_glass
+
+# Floor 4 windows (east & west)
+/pos1 76,81,-1
+/pos2 76,82,1
+//set purple_stained_glass
+
+/pos1 64,81,-1
+/pos2 64,82,1
+//set purple_stained_glass
+
+# Floor 5 windows (north & south)
+/pos1 69,86,-6
+/pos2 71,87,-6
+//set purple_stained_glass
+
+/pos1 69,86,6
+/pos2 71,87,6
+//set purple_stained_glass
+
+
+# ------------------------------------------------------------
+# 8. FLOOR 1 - ENTRY HALL
+# ------------------------------------------------------------
+
+# Bookshelf wall on north side
+/pos1 66,65,-5
+/pos2 74,66,-5
+//set bookshelf
+
+# Magic rune rug
+/pos1 69,65,-1
+/pos2 71,65,1
+//set magenta_carpet
+
+# Crafting table & storage
+/setblock 70 64 4 crafting_table
+/setblock 66 64 4 chest[facing=south]
+/setblock 74 64 4 chest[facing=west]
+
+# Cauldron near entrance
+/setblock 74 64 -4 cauldron
+
+# Lighting
+/setblock 66 67 -4 lantern
+/setblock 74 67 -4 lantern
+
+
+# ------------------------------------------------------------
+# 9. FLOOR 2 - ALCHEMY LAB
+# ------------------------------------------------------------
+
+# Brewing stations
+/setblock 67 69 -3 brewing_stand
+/setblock 73 69 -3 brewing_stand
+/setblock 67 69 3 brewing_stand
+
+# Cauldrons
+/setblock 73 69 3 cauldron
+/setblock 70 69 -4 cauldron
+
+# Ingredient storage barrels
+/pos1 66,70,0
+/pos2 66,70,2
+//set barrel
+
+# Potion shelf
+/pos1 74,70,-2
+/pos2 74,71,2
+//set bookshelf
+
+# Lighting
+/setblock 70 73 0 lantern
+
+
+# ------------------------------------------------------------
+# 10. FLOOR 3 - LIBRARY
+# ------------------------------------------------------------
+
+# Bookshelf walls (ring)
+/pos1 66,75,-5
+/pos2 74,77,-5
+//set bookshelf
+
+/pos1 66,75,5
+/pos2 74,77,5
+//set bookshelf
+
+/pos1 75,75,-4
+/pos2 75,77,4
+//set bookshelf
+
+/pos1 65,75,-4
+/pos2 65,77,4
+//set bookshelf
+
+# Lectern & reading nook
+/setblock 70 74 0 lectern
+/setblock 68 74 -2 dark_oak_stairs[facing=east]
+/setblock 72 74 2 dark_oak_stairs[facing=west]
+
+# Reading rug
+/pos1 69,74,-1
+/pos2 71,74,1
+//set light_gray_carpet
+
+
+# ------------------------------------------------------------
+# 11. FLOOR 4 - ENCHANTING CHAMBER
+# ------------------------------------------------------------
+
+# Bookshelf array around enchanting table
+/pos1 68,79,-2
+/pos2 72,81,2
+//set bookshelf
+
+# Hollow center for table
+/pos1 69,79,-1
+/pos2 71,81,1
+//set air
+
+/pos1 69,79,-1
+/pos2 71,79,1
+//set dark_oak_planks
+
+/setblock 70 79 0 enchanting_table
+
+# Floating candles
+/setblock 69 80 -1 candle[lit=true]
+/setblock 71 80 -1 candle[lit=true]
+/setblock 69 80 1 candle[lit=true]
+/setblock 71 80 1 candle[lit=true]
+
+# Amethyst accents at corners
+/setblock 66 79 -4 amethyst_block
+/setblock 74 79 -4 amethyst_block
+/setblock 66 79 4 amethyst_block
+/setblock 74 79 4 amethyst_block
+
+/setblock 66 80 -4 amethyst_cluster
+/setblock 74 80 -4 amethyst_cluster
+/setblock 66 80 4 amethyst_cluster
+/setblock 74 80 4 amethyst_cluster
+
+
+# ------------------------------------------------------------
+# 12. FLOOR 5 - STUDY & BEDROOM
+# ------------------------------------------------------------
+
+# Bed
+/setblock 66 84 3 purple_bed[facing=north,part=head]
+/setblock 66 84 4 purple_bed[facing=north,part=foot]
+
+# Study desk
+/setblock 73 84 -4 crafting_table
+/pos1 74,85,-4
+/pos2 74,86,-4
+//set bookshelf
+
+# Ender chest
+/setblock 74 84 4 ender_chest
+
+# Candle ambiance
+/setblock 66 85 -4 candle[lit=true]
+/setblock 70 85 -4 candle[lit=true]
+
+# Rug
+/pos1 69,84,-1
+/pos2 71,84,1
+//set blue_carpet
+
+
+# ------------------------------------------------------------
+# 13. ROOF - STEPPED SPIRE
+# ------------------------------------------------------------
+
+/pos1 65,90,-5
+/pos2 75,90,5
+//set 70%deepslate_bricks,30%cracked_deepslate_bricks
+
+/pos1 66,91,-4
+/pos2 74,91,4
+//set 70%deepslate_bricks,30%cracked_deepslate_bricks
+
+/pos1 67,92,-3
+/pos2 73,92,3
+//set 70%deepslate_bricks,30%cracked_deepslate_bricks
+
+/pos1 68,93,-2
+/pos2 72,93,2
+//set 70%deepslate_bricks,30%cracked_deepslate_bricks
+
+/pos1 69,94,-1
+/pos2 71,94,1
+//set 70%deepslate_bricks,30%cracked_deepslate_bricks
+
+/setblock 70 95 0 amethyst_block
+/setblock 70 96 0 amethyst_cluster
+
+
+# ------------------------------------------------------------
+# 14. CORNER ACCENTS
+# ------------------------------------------------------------
+
+/setblock 64 89 -6 lantern
+/setblock 76 89 -6 lantern
+/setblock 64 89 6 lantern
+/setblock 76 89 6 lantern

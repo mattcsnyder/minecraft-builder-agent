@@ -1,0 +1,287 @@
+# ============================================================
+# TUNG TUNG TUNG SAHUR - large detailed wooden drum creature
+# Body: radius 9, height 48 (Y68-115). Total ~57 blocks tall.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# PLAZA / PLATFORM
+# ------------------------------------------------------------
+
+/pos1 -86,63,24
+/pos2 -64,63,46
+//set stone_bricks
+
+/pos1 -86,63,24
+/pos2 -84,63,26
+//set air
+
+/pos1 -86,63,44
+/pos2 -84,63,46
+//set air
+
+/pos1 -66,63,24
+/pos2 -64,63,26
+//set air
+
+/pos1 -66,63,44
+/pos2 -64,63,46
+//set air
+
+/pos1 -82,63,28
+/pos2 -68,63,42
+//set andesite
+
+/pos1 -82,63,28
+/pos2 -81,63,29
+//set stone_bricks
+
+/pos1 -82,63,41
+/pos2 -81,63,42
+//set stone_bricks
+
+/pos1 -69,63,28
+/pos2 -68,63,29
+//set stone_bricks
+
+/pos1 -69,63,41
+/pos2 -68,63,42
+//set stone_bricks
+
+
+
+# ------------------------------------------------------------
+# LEGS / FEET BASE
+# ------------------------------------------------------------
+
+/pos1 -80,64,30
+/pos2 -70,67,40
+//set oak_log[axis=y]
+
+/pos1 -80,64,30
+/pos2 -80,67,30
+//set air
+
+/pos1 -80,64,40
+/pos2 -80,67,40
+//set air
+
+/pos1 -70,64,30
+/pos2 -70,67,30
+//set air
+
+/pos1 -70,64,40
+/pos2 -70,67,40
+//set air
+
+
+
+# ------------------------------------------------------------
+# TOES
+# ------------------------------------------------------------
+
+/setblock -78 64 41 oak_planks
+/setblock -78 65 41 white_concrete
+/setblock -76 64 41 oak_planks
+/setblock -76 65 41 white_concrete
+/setblock -74 64 41 oak_planks
+/setblock -74 65 41 white_concrete
+/setblock -72 64 41 oak_planks
+/setblock -72 65 41 white_concrete
+
+
+# ------------------------------------------------------------
+# BODY - main drum cylinder
+# ------------------------------------------------------------
+
+/pos1 -84,68,26
+/pos2 -66,115,44
+//set oak_log[axis=y]
+
+
+# ------------------------------------------------------------
+# DRUM SEGMENT BANDS
+# ------------------------------------------------------------
+
+/pos1 -84,76,26
+/pos2 -66,76,44
+//set stripped_oak_log[axis=y]
+
+/pos1 -84,84,26
+/pos2 -66,84,44
+//set black_wool
+
+/pos1 -84,92,26
+/pos2 -66,92,44
+//set stripped_oak_log[axis=y]
+
+/pos1 -84,100,26
+/pos2 -66,100,44
+//set black_wool
+
+/pos1 -84,108,26
+/pos2 -66,108,44
+//set stripped_oak_log[axis=y]
+
+
+
+# ------------------------------------------------------------
+# TOP CAP
+# ------------------------------------------------------------
+
+/pos1 -84,115,26
+/pos2 -66,115,44
+//set stripped_oak_log[axis=y]
+
+
+# ------------------------------------------------------------
+# FACE - eyes, eyebrows, mouth
+# ------------------------------------------------------------
+
+/pos1 -81,96,44
+/pos2 -78,99,44
+//set white_concrete
+
+/pos1 -79,96,44
+/pos2 -78,97,44
+//set black_concrete
+
+/setblock -78 98 44 white_wool
+
+/pos1 -72,96,44
+/pos2 -69,99,44
+//set white_concrete
+
+/pos1 -72,96,44
+/pos2 -71,97,44
+//set black_concrete
+
+/setblock -71 98 44 white_wool
+
+/pos1 -81,100,44
+/pos2 -78,100,44
+//set black_concrete
+
+/pos1 -72,100,44
+/pos2 -69,100,44
+//set black_concrete
+
+/pos1 -80,86,43
+/pos2 -70,90,43
+//set black_concrete
+
+/pos1 -80,85,44
+/pos2 -70,91,44
+//set black_concrete
+
+/pos1 -80,90,44
+/pos2 -70,90,44
+//set white_concrete
+
+/pos1 -80,86,44
+/pos2 -70,86,44
+//set white_concrete
+
+/pos1 -77,85,44
+/pos2 -73,85,44
+//set red_concrete
+
+
+# ------------------------------------------------------------
+# BODY CHAMFER (round the cylinder)
+# ------------------------------------------------------------
+
+/pos1 -84,68,26
+/pos2 -82,115,28
+//set air
+
+/pos1 -84,68,42
+/pos2 -82,115,44
+//set air
+
+/pos1 -68,68,26
+/pos2 -66,115,28
+//set air
+
+/pos1 -68,68,42
+/pos2 -66,115,44
+//set air
+
+
+
+# ------------------------------------------------------------
+# EAR STUDS
+# ------------------------------------------------------------
+
+/pos1 -78,116,35
+/pos2 -78,118,35
+//set oak_log[axis=y]
+
+/pos1 -72,116,35
+/pos2 -72,118,35
+//set oak_log[axis=y]
+
+/setblock -78 119 35 quartz_block
+/setblock -72 119 35 quartz_block
+
+
+# ------------------------------------------------------------
+# ARMS
+# ------------------------------------------------------------
+
+/pos1 -66,104,34
+/pos2 -61,106,36
+//set oak_log[axis=x]
+
+/pos1 -62,75,34
+/pos2 -60,104,36
+//set oak_log[axis=y]
+
+/pos1 -63,73,33
+/pos2 -59,75,37
+//set oak_planks
+
+/pos1 -88,104,34
+/pos2 -84,106,36
+//set oak_log[axis=x]
+
+/pos1 -90,103,33
+/pos2 -88,107,37
+//set oak_planks
+
+
+# ------------------------------------------------------------
+# BASEBALL BAT (pentungan)
+# ------------------------------------------------------------
+
+/pos1 -60,64,35
+/pos2 -60,78,35
+//set stripped_spruce_log[axis=y]
+
+/pos1 -60,64,35
+/pos2 -60,67,35
+//set black_wool
+
+/pos1 -61,78,35
+/pos2 -60,100,36
+//set spruce_log[axis=y]
+
+/pos1 -61,101,35
+/pos2 -60,101,36
+//set stripped_spruce_log[axis=y]
+
+
+# ------------------------------------------------------------
+# STREETLAMP (bus stop detail)
+# ------------------------------------------------------------
+
+/pos1 -51,64,26
+/pos2 -51,72,26
+//set cobblestone_wall
+
+/pos1 -53,72,26
+/pos2 -51,72,26
+//set oak_fence
+
+/setblock -53 71 26 lantern
+/setblock -52 70 26 dark_oak_planks

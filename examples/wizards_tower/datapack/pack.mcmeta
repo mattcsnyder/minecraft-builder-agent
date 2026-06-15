@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "pack_format": 71,
+    "supported_formats": [1, 9999],
+    "description": "wizards_tower build commands"
+  }
+}

@@ -1,0 +1,597 @@
+# ============================================================
+# MEDIUM FANTASY CASTLE - WORLDEDIT COMMAND SCRIPT
+# Size: 81 x 81
+# Centered around X=0, Z=0
+# Ground level: Y=64
+# Materials:
+# - stone_bricks
+# - cracked_stone_bricks
+# - mossy_stone_bricks
+# - cobblestone
+# - spruce_planks
+# - spruce_stairs
+# - dark_oak_door
+# - iron_bars
+# - lantern
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. CLEAR BUILD AREA
+# ------------------------------------------------------------
+
+/pos1 -45,64,-45
+/pos2 45,100,45
+//set air
+
+
+# ------------------------------------------------------------
+# 2. FOUNDATION PLATFORM
+# ------------------------------------------------------------
+
+/pos1 -40,63,-40
+/pos2 40,63,40
+//set stone_bricks
+
+/pos1 -38,64,-38
+/pos2 38,64,38
+//set grass_block
+
+
+# ------------------------------------------------------------
+# 3. OUTER CASTLE WALLS
+# ------------------------------------------------------------
+
+# North wall
+/pos1 -40,64,-40
+/pos2 40,72,-37
+//set 75%stone_bricks,15%cobblestone,5%cracked_stone_bricks,5%mossy_stone_bricks
+
+# South wall
+/pos1 -40,64,37
+/pos2 40,72,40
+//set 75%stone_bricks,15%cobblestone,5%cracked_stone_bricks,5%mossy_stone_bricks
+
+# West wall
+/pos1 -40,64,-40
+/pos2 -37,72,40
+//set 75%stone_bricks,15%cobblestone,5%cracked_stone_bricks,5%mossy_stone_bricks
+
+# East wall
+/pos1 37,64,-40
+/pos2 40,72,40
+//set 75%stone_bricks,15%cobblestone,5%cracked_stone_bricks,5%mossy_stone_bricks
+
+
+# ------------------------------------------------------------
+# 4. HOLLOW INTERIOR OF WALLS
+# ------------------------------------------------------------
+
+/pos1 -36,65,-36
+/pos2 36,71,36
+//replace stone_bricks air
+//replace cobblestone air
+//replace cracked_stone_bricks air
+//replace mossy_stone_bricks air
+
+
+# ------------------------------------------------------------
+# 5. WALL WALKWAYS
+# ------------------------------------------------------------
+
+# North walkway
+/pos1 -40,73,-40
+/pos2 40,73,-37
+//set stone_bricks
+
+# South walkway
+/pos1 -40,73,37
+/pos2 40,73,40
+//set stone_bricks
+
+# West walkway
+/pos1 -40,73,-40
+/pos2 -37,73,40
+//set stone_bricks
+
+# East walkway
+/pos1 37,73,-40
+/pos2 40,73,40
+//set stone_bricks
+
+
+# ------------------------------------------------------------
+# 6. WALL BATTLEMENTS
+# ------------------------------------------------------------
+
+# North battlements
+/pos1 -40,74,-40
+/pos2 40,75,-40
+//set stone_bricks
+
+/pos1 -40,74,-37
+/pos2 40,75,-37
+//set stone_bricks
+
+# South battlements
+/pos1 -40,74,40
+/pos2 40,75,40
+//set stone_bricks
+
+/pos1 -40,74,37
+/pos2 40,75,37
+//set stone_bricks
+
+# West battlements
+/pos1 -40,74,-40
+/pos2 -40,75,40
+//set stone_bricks
+
+/pos1 -37,74,-40
+/pos2 -37,75,40
+//set stone_bricks
+
+# East battlements
+/pos1 40,74,-40
+/pos2 40,75,40
+//set stone_bricks
+
+/pos1 37,74,-40
+/pos2 37,75,40
+//set stone_bricks
+
+
+# Cut gaps in battlements manually or with repeated air cuts:
+# North gaps
+/pos1 -36,74,-40
+/pos2 -34,75,-40
+//set air
+
+/pos1 -28,74,-40
+/pos2 -26,75,-40
+//set air
+
+/pos1 -20,74,-40
+/pos2 -18,75,-40
+//set air
+
+/pos1 -12,74,-40
+/pos2 -10,75,-40
+//set air
+
+/pos1 -4,74,-40
+/pos2 -2,75,-40
+//set air
+
+/pos1 4,74,-40
+/pos2 6,75,-40
+//set air
+
+/pos1 12,74,-40
+/pos2 14,75,-40
+//set air
+
+/pos1 20,74,-40
+/pos2 22,75,-40
+//set air
+
+/pos1 28,74,-40
+/pos2 30,75,-40
+//set air
+
+/pos1 36,74,-40
+/pos2 38,75,-40
+//set air
+
+
+# ------------------------------------------------------------
+# 7. FOUR CORNER TOWERS
+# ------------------------------------------------------------
+
+# Northwest tower
+/pos1 -44,64,-44
+/pos2 -32,88,-32
+//set 70%stone_bricks,15%cobblestone,10%cracked_stone_bricks,5%mossy_stone_bricks
+
+/pos1 -41,65,-41
+/pos2 -35,87,-35
+//set air
+
+# Northeast tower
+/pos1 32,64,-44
+/pos2 44,88,-32
+//set 70%stone_bricks,15%cobblestone,10%cracked_stone_bricks,5%mossy_stone_bricks
+
+/pos1 35,65,-41
+/pos2 41,87,-35
+//set air
+
+# Southwest tower
+/pos1 -44,64,32
+/pos2 -32,88,44
+//set 70%stone_bricks,15%cobblestone,10%cracked_stone_bricks,5%mossy_stone_bricks
+
+/pos1 -41,65,35
+/pos2 -35,87,41
+//set air
+
+# Southeast tower
+/pos1 32,64,32
+/pos2 44,88,44
+//set 70%stone_bricks,15%cobblestone,10%cracked_stone_bricks,5%mossy_stone_bricks
+
+/pos1 35,65,35
+/pos2 41,87,41
+//set air
+
+
+# ------------------------------------------------------------
+# 8. TOWER FLOORS
+# ------------------------------------------------------------
+
+# Add floors inside towers
+/pos1 -41,72,-41
+/pos2 -35,72,-35
+//set spruce_planks
+
+/pos1 -41,80,-41
+/pos2 -35,80,-35
+//set spruce_planks
+
+/pos1 35,72,-41
+/pos2 41,72,-35
+//set spruce_planks
+
+/pos1 35,80,-41
+/pos2 41,80,-35
+//set spruce_planks
+
+/pos1 -41,72,35
+/pos2 -35,72,41
+//set spruce_planks
+
+/pos1 -41,80,35
+/pos2 -35,80,41
+//set spruce_planks
+
+/pos1 35,72,35
+/pos2 41,72,41
+//set spruce_planks
+
+/pos1 35,80,35
+/pos2 41,80,41
+//set spruce_planks
+
+
+# ------------------------------------------------------------
+# 9. TOWER ROOFS / TOPS
+# ------------------------------------------------------------
+
+# Flat battlement tops
+/pos1 -45,89,-45
+/pos2 -31,89,-31
+//set stone_bricks
+
+/pos1 31,89,-45
+/pos2 45,89,-31
+//set stone_bricks
+
+/pos1 -45,89,31
+/pos2 -31,89,45
+//set stone_bricks
+
+/pos1 31,89,31
+/pos2 45,89,45
+//set stone_bricks
+
+
+# Tower battlement blocks
+/pos1 -45,90,-45
+/pos2 -31,91,-45
+//set stone_bricks
+
+/pos1 -45,90,-31
+/pos2 -31,91,-31
+//set stone_bricks
+
+/pos1 -45,90,-45
+/pos2 -45,91,-31
+//set stone_bricks
+
+/pos1 -31,90,-45
+/pos2 -31,91,-31
+//set stone_bricks
+
+/pos1 31,90,-45
+/pos2 45,91,-45
+//set stone_bricks
+
+/pos1 31,90,-31
+/pos2 45,91,-31
+//set stone_bricks
+
+/pos1 31,90,-45
+/pos2 31,91,-31
+//set stone_bricks
+
+/pos1 45,90,-45
+/pos2 45,91,-31
+//set stone_bricks
+
+/pos1 -45,90,31
+/pos2 -31,91,31
+//set stone_bricks
+
+/pos1 -45,90,45
+/pos2 -31,91,45
+//set stone_bricks
+
+/pos1 -45,90,31
+/pos2 -45,91,45
+//set stone_bricks
+
+/pos1 -31,90,31
+/pos2 -31,91,45
+//set stone_bricks
+
+/pos1 31,90,31
+/pos2 45,91,31
+//set stone_bricks
+
+/pos1 31,90,45
+/pos2 45,91,45
+//set stone_bricks
+
+/pos1 31,90,31
+/pos2 31,91,45
+//set stone_bricks
+
+/pos1 45,90,31
+/pos2 45,91,45
+//set stone_bricks
+
+
+# ------------------------------------------------------------
+# 10. FRONT GATEHOUSE
+# ------------------------------------------------------------
+
+# Gatehouse main body on north wall
+/pos1 -10,64,-48
+/pos2 10,82,-36
+//set 75%stone_bricks,15%cobblestone,5%cracked_stone_bricks,5%mossy_stone_bricks
+
+# Hollow gatehouse interior
+/pos1 -7,65,-45
+/pos2 7,81,-39
+//set air
+
+# Gate opening
+/pos1 -3,64,-48
+/pos2 3,72,-36
+//set air
+
+# Portcullis
+/pos1 -2,65,-48
+/pos2 2,72,-48
+//set iron_bars
+
+# Gatehouse roof
+/pos1 -11,83,-49
+/pos2 11,83,-35
+//set stone_bricks
+
+# Gatehouse battlements
+/pos1 -11,84,-49
+/pos2 11,85,-49
+//set stone_bricks
+
+/pos1 -11,84,-35
+/pos2 11,85,-35
+//set stone_bricks
+
+/pos1 -11,84,-49
+/pos2 -11,85,-35
+//set stone_bricks
+
+/pos1 11,84,-49
+/pos2 11,85,-35
+//set stone_bricks
+
+
+# ------------------------------------------------------------
+# 11. CENTRAL KEEP
+# ------------------------------------------------------------
+
+# Main keep body
+/pos1 -14,64,-10
+/pos2 14,84,18
+//set 70%stone_bricks,15%cobblestone,10%cracked_stone_bricks,5%mossy_stone_bricks
+
+# Hollow keep
+/pos1 -11,65,-7
+/pos2 11,83,15
+//set air
+
+# Keep floor
+/pos1 -11,64,-7
+/pos2 11,64,15
+//set spruce_planks
+
+# Second floor
+/pos1 -11,74,-7
+/pos2 11,74,15
+//set spruce_planks
+
+# Third floor
+/pos1 -11,82,-7
+/pos2 11,82,15
+//set spruce_planks
+
+# Keep doorway
+/pos1 -2,65,-10
+/pos2 2,68,-10
+//set air
+
+# Keep roof
+/pos1 -15,85,-11
+/pos2 15,85,19
+//set stone_bricks
+
+# Keep battlements
+/pos1 -15,86,-11
+/pos2 15,87,-11
+//set stone_bricks
+
+/pos1 -15,86,19
+/pos2 15,87,19
+//set stone_bricks
+
+/pos1 -15,86,-11
+/pos2 -15,87,19
+//set stone_bricks
+
+/pos1 15,86,-11
+/pos2 15,87,19
+//set stone_bricks
+
+
+# ------------------------------------------------------------
+# 12. KEEP WINDOWS
+# ------------------------------------------------------------
+
+# Front windows
+/pos1 -8,68,-10
+/pos2 -6,70,-10
+//set iron_bars
+
+/pos1 6,68,-10
+/pos2 8,70,-10
+//set iron_bars
+
+/pos1 -8,78,-10
+/pos2 -6,80,-10
+//set iron_bars
+
+/pos1 6,78,-10
+/pos2 8,80,-10
+//set iron_bars
+
+# Side windows
+/pos1 -14,68,0
+/pos2 -14,70,2
+//set iron_bars
+
+/pos1 14,68,0
+/pos2 14,70,2
+//set iron_bars
+
+/pos1 -14,78,8
+/pos2 -14,80,10
+//set iron_bars
+
+/pos1 14,78,8
+/pos2 14,80,10
+//set iron_bars
+
+
+# ------------------------------------------------------------
+# 13. COURTYARD PATHS
+# ------------------------------------------------------------
+
+# Main path from gate to keep
+/pos1 -3,64,-36
+/pos2 3,64,-11
+//set cobblestone
+
+# Cross path
+/pos1 -30,64,-2
+/pos2 30,64,2
+//set cobblestone
+
+# Courtyard corners as grass
+/pos1 -34,64,-34
+/pos2 -16,64,-12
+//set grass_block
+
+/pos1 16,64,-34
+/pos2 34,64,-12
+//set grass_block
+
+/pos1 -34,64,8
+/pos2 -16,64,34
+//set grass_block
+
+/pos1 16,64,8
+/pos2 34,64,34
+//set grass_block
+
+
+# ------------------------------------------------------------
+# 14. SMALL SIDE BUILDINGS
+# ------------------------------------------------------------
+
+# Barracks left
+/pos1 -32,64,10
+/pos2 -20,72,26
+//set spruce_planks
+
+/pos1 -31,65,11
+/pos2 -21,71,25
+//set air
+
+/pos1 -33,73,9
+/pos2 -19,73,27
+//set spruce_stairs
+
+# Stable right
+/pos1 20,64,10
+/pos2 32,70,26
+//set oak_planks
+
+/pos1 21,65,11
+/pos2 31,69,25
+//set air
+
+/pos1 19,71,9
+/pos2 33,71,27
+//set spruce_stairs
+
+
+# ------------------------------------------------------------
+# 15. LIGHTING
+# ------------------------------------------------------------
+
+/setblock 0 70 -34 lantern
+/setblock -20 70 -34 lantern
+/setblock 20 70 -34 lantern
+/setblock -34 70 0 lantern
+/setblock 34 70 0 lantern
+/setblock -20 70 30 lantern
+/setblock 20 70 30 lantern
+
+/setblock 0 75 0 lantern
+/setblock -8 75 8 lantern
+/setblock 8 75 8 lantern
+
+
+# ------------------------------------------------------------
+# 16. FINAL DECORATION
+# ------------------------------------------------------------
+
+# Flags on towers
+/setblock -38 92 -38 oak_fence
+/setblock 38 92 -38 oak_fence
+/setblock -38 92 38 oak_fence
+/setblock 38 92 38 oak_fence
+
+/setblock -38 93 -38 red_wool
+/setblock 38 93 -38 blue_wool
+/setblock -38 93 38 red_wool
+/setblock 38 93 38 blue_wool
+
+# Throne room marker
+/pos1 -3,65,12
+/pos2 3,65,15
+//set red_carpet
+
+/setblock 0 65 15 spruce_stairs[facing=north]

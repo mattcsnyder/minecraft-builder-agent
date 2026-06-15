@@ -1,0 +1,180 @@
+# ============================================================
+# GLASS DOME ENCLOSURE
+# Cylinder radius 110, centered (17,35), Y63-312
+# Stepped glass pyramid roof up to Y319
+# Encloses castle, wizard's tower, Empire State Building, blimp
+# ============================================================
+
+
+# ------------------------------------------------------------
+# CYLINDER WALLS
+# ------------------------------------------------------------
+
+/pos1 -93,63,-75
+/pos2 127,312,-75
+//set glass
+
+/pos1 -93,63,145
+/pos2 127,312,145
+//set glass
+
+/pos1 127,63,-75
+/pos2 127,312,145
+//set glass
+
+/pos1 -93,63,-75
+/pos2 -93,312,145
+//set glass
+
+
+
+# ------------------------------------------------------------
+# CORNER RIBS
+# ------------------------------------------------------------
+
+/pos1 -93,63,-75
+/pos2 -93,312,-75
+//set light_gray_concrete
+
+/pos1 -93,63,145
+/pos2 -93,312,145
+//set light_gray_concrete
+
+/pos1 127,63,-75
+/pos2 127,312,-75
+//set light_gray_concrete
+
+/pos1 127,63,145
+/pos2 127,312,145
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# HORIZONTAL TRIM RINGS
+# ------------------------------------------------------------
+
+/pos1 -93,150,-75
+/pos2 127,150,-75
+//set light_gray_concrete
+
+/pos1 -93,150,145
+/pos2 127,150,145
+//set light_gray_concrete
+
+/pos1 127,150,-75
+/pos2 127,150,145
+//set light_gray_concrete
+
+/pos1 -93,150,-75
+/pos2 -93,150,145
+//set light_gray_concrete
+
+/pos1 -93,250,-75
+/pos2 127,250,-75
+//set light_gray_concrete
+
+/pos1 -93,250,145
+/pos2 127,250,145
+//set light_gray_concrete
+
+/pos1 127,250,-75
+/pos2 127,250,145
+//set light_gray_concrete
+
+/pos1 -93,250,-75
+/pos2 -93,250,145
+//set light_gray_concrete
+
+
+
+# ------------------------------------------------------------
+# STEPPED GLASS ROOF
+# ------------------------------------------------------------
+
+/pos1 -93,312,-75
+/pos2 127,313,-75
+//set glass
+
+/pos1 -93,312,145
+/pos2 127,313,145
+//set glass
+
+/pos1 127,312,-75
+/pos2 127,313,145
+//set glass
+
+/pos1 -93,312,-75
+/pos2 -93,313,145
+//set glass
+
+/pos1 -65,314,-47
+/pos2 99,315,-47
+//set glass
+
+/pos1 -65,314,117
+/pos2 99,315,117
+//set glass
+
+/pos1 99,314,-47
+/pos2 99,315,117
+//set glass
+
+/pos1 -65,314,-47
+/pos2 -65,315,117
+//set glass
+
+/pos1 -38,316,-20
+/pos2 72,317,-20
+//set glass
+
+/pos1 -38,316,90
+/pos2 72,317,90
+//set glass
+
+/pos1 72,316,-20
+/pos2 72,317,90
+//set glass
+
+/pos1 -38,316,-20
+/pos2 -38,317,90
+//set glass
+
+/pos1 -10,318,8
+/pos2 44,318,8
+//set glass
+
+/pos1 -10,318,62
+/pos2 44,318,62
+//set glass
+
+/pos1 44,318,8
+/pos2 44,318,62
+//set glass
+
+/pos1 -10,318,8
+/pos2 -10,318,62
+//set glass
+
+/setblock 17 319 35 glass
+
+
+# ------------------------------------------------------------
+# CARDINAL OPENINGS
+# ------------------------------------------------------------
+
+/pos1 -13,70,-75
+/pos2 47,290,-75
+//set air
+
+/pos1 -13,70,145
+/pos2 47,290,145
+//set air
+
+/pos1 127,70,5
+/pos2 127,290,65
+//set air
+
+/pos1 -93,70,5
+/pos2 -93,290,65
+//set air
